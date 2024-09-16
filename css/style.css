@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contiener {
+  max-width: 1440px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: dotted;
+  list-style: none;
+}
+
+button {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 115px;
+  height: 39px;
+}
+
+button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+a {
+  position: relative;
+  color: black; /* O'zgartirilishi mumkin */
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* Chiziqning qalinligi */
+  background-color: white; /* Chiziqning rangi */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 829px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 365px) {
+  .q {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  button {
+    width: 100px;
+    height: 39px;
+  }
+  header{
+    top: 0px;
+    z-index: 999;
+    position: sticky;
+    
+  }
+}
+.card:hover{
+    background-color: #25236f;
+}
+.card1:hover{
+    background-color: #25236f;
+}
+.card1{
+    background-color: #bfbbbb;
+}
+
+@media (max-width:518px) {
+    .s h3{
+        font-size: 60px;
+    }
+    .s p{
+        font-size: 10px;
+    }
+}
+@media (max-width:418px) {
+    .s h3{
+        font-size: 40px;
+    }
+    .s p{
+        font-size: 10px;
+    }
+}
+@media (max-width:1171px) {
+    .e h3{
+      font-size: 35px;  
+    }
+    .e p{
+        font-size: 10px;
+    }
+}
+@media (max-width:937px) {
+    .e h3{
+      font-size: 28px;  
+    }
+    .e p{
+        font-size: 10px;
+    }
+}
+@media (max-width:790px) {
+    .e{
+        display: flex ;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .e h3{
+        font-size: 40px;
+    }
+    .e p{
+        font-size: 14px;
+    }
+
+    .e img{
+        width: 100%;
+    }
+}
+@media (max-width:1014px) {
+    .card{
+        width: 260px;
+        height: 400px;
+    }
+}
+@media (max-width:848px) {
+    .card{
+        width: 200px;
+        height: 350px;
+    }
+}
+@media (max-width:672px) {
+    .card{
+        width: 300px;
+        height: 390px;
+    }
+    .d{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+}
+@media (max-width:1024px) {
+    .f img{
+        width: 30%;
+    }
+}
+@media (max-width:1024px) {
+    .f h3{
+        width: 42px;
+        
+        
+    }
+   
+}
+@media (max-width:896px) {
+    .f img {
+        display: none;
+    }
+    .f h3{
+        width: 100%;
+        text-align: center;
+    }
+    .f{
+        text-align: center;
+    }
+}
+
+@media (max-width:1205px) {
+    .card1{
+        width: 320px;
+        height: 500px;
+    }
+}
+@media (max-width:1043px) {
+    .card1{
+        width: 290px;
+        height: 480px;
+    }
+}
+@media (max-width:947px) {
+    .card1{
+        width: 240px;
+        height: 450px;
+    }
+}
+@media (max-width:798px) {
+    .flex_c{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .card1{
+        width: 375px;
+        height: 600px;
+        
+    }
+    
+}
+@media (max-width:746px) {
+    .m{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width:300px) {
+    .m{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+}
+@media (max-width:381px) {
+    h3{
+        font-size: 39px;
+    }
+}
