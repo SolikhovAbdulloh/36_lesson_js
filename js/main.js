@@ -122,3 +122,26 @@
 // result = str.trim();
 
 // console.log(result);
+
+
+// function arrfunc(str){
+
+// var str2 = ""
+//     let count = 0
+//     for(let i = 0 ; i < str.length ; i++){
+//         count++
+//         if(count === 3){
+//             count = 0
+//             str2 += str[i]?.toUpperCase()
+//         }else
+
+        
+//         str2 += str[i]
+//     }
+    
+//     console.log(str2);
+// }
+
+// let str = 'helloworld'
+
+// arrfunc(str)
